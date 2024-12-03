@@ -1,0 +1,14 @@
+{
+    "builds" : [
+        {
+            "src": "JujuyRecicla/wsgi.py",
+            "use": "@vercel/python"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "JujuyRecicla/wsgi.py"
+        }
+    ]
+}
